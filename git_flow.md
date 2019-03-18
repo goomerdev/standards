@@ -9,11 +9,11 @@ O **rebase** é um dos comandos que integram mudanças entre *branches*, assim c
 ## Benefícios
 
 Com um fluxo padrão de entrega de código ou **CD**(Continuous Delivery), a automatização por parte do time de **DevOps** é
-facilitada e se torna mais conscistente.
+facilitada e se torna mais consistente.
 
-Conflitos são resolvidos localmente junto com a reescrita da história, assim cada *pull request* ja vem "pronto" e o trabalho de quem vai aceitar as mudanças se torna mais fácil e rápido.
+Conflitos são resolvidos localmente junto com a reescrita da história, assim cada *pull request* já vem "pronto" e o trabalho de quem vai aceitar as mudanças se torna mais fácil e rápido.
 
-Práticas de *code review* se tornam mais viáveis, com um *pipe* de entrega mais homogênio, rápido e efetivo por parte 
+Práticas de *code review* se tornam mais viáveis, com um *pipe* de entrega mais homogêneo, rápido e efetivo por parte 
 do processo de qualidade de código ser parcialmente automatizado, restando apenas a validação de qualidade pelo responsável
 da *review*.
 
