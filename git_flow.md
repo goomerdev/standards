@@ -4,7 +4,7 @@ A idéia é padronizar o *workflow* do time de desenvolvimento em relação à e
 
 ## Rebase Flow
 
-O comando **rebase** é um dos comandos que integram mudanças entre branchs, assim como o merge, ...
+O **rebase** é um dos comandos que integram mudanças entre *branches*, assim como o *merge*, ...
 
 ## Benefícios
 
@@ -17,6 +17,8 @@ Práticas de *code review* se tornam mais viáveis, com um *pipe* de entrega mai
 do processo de qualidade de código ser parcialmente automatizado, restando apenas a validação de qualidade pelo responsável
 da *review*.
 
+O processo de *squashing* torna o histórico de alterações mais limpo e linear, reduzindo vários *commits* que não agregam tanto à visualização da linha do tempo em poucos e mais relevantes.
+
 ## Como Fazer?
 
 Abrimos uma nova *branch* para trabalhar originada da *develop* como de costume.
@@ -25,7 +27,7 @@ Abrimos uma nova *branch* para trabalhar originada da *develop* como de costume.
 $ git checkout -b <nova-branch>
 ```
 
-Após finalizarmos o trabalho, atualizamos a *branch develop* local e realizamos o **rebase**. Assim juntamos ambas as histórias ao mesmo tempo de resolver possíveis conflitos interativamente(*flag* -i).
+Após finalizarmos o trabalho, atualizamos a *branch develop* local e realizamos o **rebase**. Assim juntamos ambas as histórias ao mesmo tempo de resolver possíveis conflitos interativamente(*flag* -i) e realizar o *squashing*(flag --autosquash).
 
 ```bash
 $ git checkout develop && git pull
@@ -46,9 +48,13 @@ Caso já esteja:
 $ git push -f
 ```
 
+Assim resta apenas abrir um *pull request* para a *develop*.
+
 ## Cuidados
 
 O rebase pode ser bastante destrutivo, pois ele literalmente reescreve a história da branch destino.
+
+Não faça rebase de uma *branch* ao mesmo tempo que mais pessoas ainda estejam trabalhando nelas.
 
 ## Referências
 
